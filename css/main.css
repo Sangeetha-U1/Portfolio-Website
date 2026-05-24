@@ -1056,7 +1056,7 @@ section,
   transform: translateY(-4px);
 }
 
-.about .skill-item {
+ .skill-item {
   padding: 24px;
   border-radius: 6px;
   transition: 0.3s ease-in-out;
@@ -1065,26 +1065,26 @@ section,
   height: 100%;
 }
 
-.about .skill-item i {
+.skill-item i {
   font-size: 24px;
   color: var(--accent-color);
   margin-bottom: 16px;
   display: inline-block;
 }
 
-.about .skill-item h3 {
+ .skill-item h3 {
   font-size: 16px;
   margin-bottom: 6px;
   font-weight: 500;
 }
 
-.about .skill-item p {
+.skill-item p {
   margin: 0;
   font-size: 14px;
   color: color-mix(in srgb, var(--default-color), transparent 25%);
 }
 
-.about .skill-item:hover {
+.skill-item:hover {
   transform: translateY(-3px);
   border-color: color-mix(in srgb, var(--accent-color), transparent 60%);
   box-shadow: 0 10px 30px color-mix(in srgb, var(--default-color), transparent 92%);
