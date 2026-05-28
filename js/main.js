@@ -202,3 +202,31 @@
   });
 
 })();
+const toggleBtn = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+
+function setTheme(isDark) {
+  if (isDark) {
+    document.body.classList.add("dark-theme");
+    themeIcon.classList.remove("bi-moon");
+    themeIcon.classList.add("bi-sun");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.body.classList.remove("dark-theme");
+    themeIcon.classList.remove("bi-sun");
+    themeIcon.classList.add("bi-moon");
+    localStorage.setItem("theme", "light");
+  }
+}
+
+// Load saved theme
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  setTheme(true);
+}
+
+// Toggle click
+toggleBtn.addEventListener("click", () => {
+  const isDark = document.body.classList.contains("dark-theme");
+  setTheme(!isDark);
+});

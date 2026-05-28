@@ -1956,3 +1956,37 @@ section,
   background-color: color-mix(in srgb, var(--surface-color), transparent 70%);
 }
 
+/* ===== Theme Variables ===== */
+
+/* Dark Theme */
+body.dark-theme {
+  --background-color: #121212;
+  --default-color: #f1f1f1;
+  --heading-color: #ffffff;
+  --surface-color: #1e1e1e;
+}
+/* Apply globally */
+
+/* Navbar / sections */
+body.light-theme {
+  --background-color: #f8fafc;   /* soft white background */
+  --default-color: #cdd4df;      /* dark slate text */
+  --heading-color: #0f172a;      /* stronger headings */
+  --surface-color: #ffffff;      /* cards / sections */
+  --accent-color: #1387c1;       /* keep same brand blue */
+  --contrast-color: #ffffff;
+}
+/* Cards or floating elements */
+.floating-card,
+.hero-content,
+.container {
+  color: var(--text-color);
+}
+.theme-toggle button {
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
